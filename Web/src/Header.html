@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="../script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="header">
+        <img src="../assets/logo.png" alt="logo stylé">
+        <div class="select">
+            <a href="#">Catégorie1</a>
+            <a href="#">Catégorie2</a>
+            <a href="#" class="categorie3">Catégorie3</a>
+            <a href="#" class="categorie4">Catégorie4</a>
+        </div>
+    </nav>
+</html>
+
+<style>
+
+    @font-face {
+        font-family: 'Kanit';
+        src: url(../assets/Kanit/Kanit-Light.ttf);
+    }
+
+    body {
+        font-family: 'Kanit';
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        margin: 25px;
+        transition: 0.4s;
+    }
+
+    .select {
+        display: flex;
+        flex-direction:row;
+        position: relative;
+    }
+
+    img {
+        height: 100px;
+        width: 100px;
+        display: flex;
+        background: none;
+        margin: 10px;        
+    }
+
+    .header {
+        width: 100%;
+        height: 130px;
+        background-color: black;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    body {
+        height: 1000px;
+    }
+
+    a:hover {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    @media (min-width: 100px) and (max-width : 600px) {
+        .header {
+            float: none;
+            width: auto;
+        }
+
+        .select {
+            float: none;
+            width: auto;
+        }
+    }
+
+    @media (min-width: 781px) and (max-width : 979px) {
+
+    }
+
+
+</style>
