@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li class="menu-deroulant">
+                <a href="#">Catégorie1</a>
+                <ul class="sous-menu">
+                    <li><a href="#">Catégorie1.1</a></li>
+                    <li><a href="#">Catégorie1.2</a></li>
+                </ul>
+            </li>
+            <li class="menu-deroulant">
+                <a href="#">Catégorie2</a>
+                <ul class="sous-menu">
+                    <li><a href="#">Catégorie2.1</a></li>
+                    <li><a href="#">Catégorie2.2</a></li>
+                </ul>
+            </li>
+            <li class="menu-deroulant">
+                <a href="#">Catégorie3</a>
+                <ul class="sous-menu">
+                    <li><a href="#">Catégorie3.1</a></li>
+                    <li><a href="#">Catégorie3.2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    @font-face {
+        font-family: 'Kanit';
+        src: url(../assets/Kanit/Kanit-Light.ttf);
+    }
+
+    body {
+        font-family: 'Kanit';
+    }
+
+    .container {
+        width: 100%;
+        font-size: 18px;
+        position: sticky;
+        top: 0;
+    }
+
+    .container > ul {
+        display: flex;
+        text-align: center;
+        height: 80px;
+    }
+
+    .container ul {
+        list-style: none;
+    }
+
+    .container > ul > li {
+        position: relative;
+        background-color: black;
+        height: 100%;
+        flex: 1;
+    }
+     
+    .container > ul > li > a {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 0.4s;
+    }
+
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .sous-menu {
+        margin-top: 60px;
+        width: 100%;
+        text-align: left;
+        background-color: black;
+        overflow: hidden;
+        max-height: 0;
+    }
+
+    .sous-menu > li > a {
+        height: 50px;
+        padding-left: 20px;
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+
+    .sous-menu > li {
+        transition: 0.4s;
+    }
+
+    .container > ul > li:hover > a {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    .sous-menu > li:hover {
+        font-size: 1.1em;
+        font-weight: bold;
+    }
+
+    @keyframes SousMenu {
+        0% {
+            box-shadow: 0px 3px 3px 1px rgba(0,0,0,0);
+        }
+
+        30% {
+            box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+        }
+
+        100% {
+            max-height: 50em;
+            box-shadow: 0px 3px 3px 1px rgba(0,0,0,0.3);
+        }
+    }
+
+    .menu-deroulant:hover > .sous-menu {
+        animation: SousMenu 1s forwards;
+    }
+
+</style>
