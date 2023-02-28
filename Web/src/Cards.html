@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="presentation">
+        <div class="photo1">
+            <img src="../pics/photo1.png" alt="photo1" class="my-img img1">
+            <a href="#" class="desc">The Beginner's Guide to Photoshop</a>
+        </div>
+        <div class="photo2">
+            <img src="../pics/photo2.png" alt="photo2" class="my-img img2">
+            <a href="#" class="desc">Frequency Separation : How to Master Retouching in Photoshop</a>
+        </div>
+        <div class="photo3">
+            <img src="../pics/photo3.png" alt="photo3" class="my-img img3">
+            <a href="#" class="desc">How to Master Sharpening in Photoshop</a>
+        </div>
+        <div class="photo4">
+            <img src="../pics/photo4.png" alt="photo4" class="my-img img4">
+            <a href="#" class="desc">How to Master Double Exposure in Photoshop</a>
+        </div>
+        <div class="photo5">
+            <img src="../pics/photo5.png" alt="photo5" class="my-img img5">
+            <a href="#" class="desc">Better than HDR - Master Luminosity Masks in Photoshop</a>
+        </div>
+   </div>
+</body>
+</html>
+
+<style>
+
+@font-face {
+        font-family: 'Kanit';
+        src: url(../assets/Kanit/Kanit-Light.ttf);
+    }
+
+    body {
+        font-family: 'Kanit';
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .presentation {
+    display:flex;
+    position: absolute;
+    margin: 15px;
+}
+
+.photo1 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo2 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+    max-width: 100%;
+}
+
+.photo3 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo4 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo5 {
+    border: 1px solid white;
+    border-radius: 3%;
+    margin: 10px;
+}
+
+.photo1:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+
+.photo1:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo2:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo2:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo3:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo3:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo4:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo4:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.photo5:hover {
+    transform: scale(1.05);
+    transition: 1.1s;
+}
+
+.photo5:not(:hover) {
+    transform:scale(1);
+    transition: 1.1s;
+}
+
+.presentation a {
+    color: black;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.desc {
+    margin-top: 10%;
+}
+
+.my-img:hover ~ a  {
+    color: red;
+}
+</style>
